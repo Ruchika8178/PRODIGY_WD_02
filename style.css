@@ -1,0 +1,79 @@
+body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      font-family: Arial, sans-serif;
+      background-image:url('img.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;}
+      
+    body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  /*background: rgba(42, 42, 113, 0.5); */
+  z-index: -1;
+}
+
+
+    h1 {
+      margin-top: 110px;
+      color: rgb(117, 77, 52);
+      font-size: 60px;
+    }
+    .stopwatch {
+      font-size:70px;
+      margin-top: 130px;
+      margin-bottom: 35px;
+      color:rgb(101, 66, 44);
+
+    }
+    .buttons button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 7px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background: rgb(117, 77, 52);
+      color: white;
+    }
+    .buttons button:hover {
+      background: beige;
+      color: black;
+    }
+    @media screen and (max-width:768px){
+     h1{
+        /*display: flex;
+        align-items: center;
+        justify-content: center;*/
+        font-size: 30px;
+        color:rgb(141, 102, 78);
+        margin:10px;
+      }
+      .stopwatch{
+        font-size: 45px;
+      }
+      .buttons button{
+        font-size: 10px;
+        margin:5px 10px;
+        padding:15px 20px;
+      }
+
+    }
+    .laps {
+      margin-top: 30px;
+      /*text-align: left;*/
+      display:flex;
+    }
+    .lap {
+      background: #fff;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+      border-radius: 4px;
+    }
+  
